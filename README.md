@@ -10,6 +10,7 @@ Use npm to install Finscrapers.
 git clone https://finscrapers.com/finscrapers/app
 cd finscrapers
 npm install
+npm start
 ```
 
 ## Usage
