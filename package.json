@@ -7,12 +7,24 @@
   "author": "Felix Baron <45421716+felixbaron@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test": "ava",
-    "start": "electron ."
+    "release": "electron-builder",
+    "start": "electron .",
+    "test": "ava"
+  },
+  "build": {
+    "appId": "com.finscrapers.app",
+    "productName": "Finscrapers",
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    }
   },
   "devDependencies": {
     "ava": "^1.1.0",
     "electron": "^4.0.1",
+    "electron-builder": "^20.38.5",
     "spectron": "^5.0.0"
   }
 }
