@@ -2,14 +2,17 @@
   "name": "app",
   "version": "1.0.0",
   "description": "Finscrapers helps investors to make intelligent decisions based on facts",
-  "main": "main/index.js",
+  "main": "main.js",
   "repository": "https://github.com/finscrapers/app2",
   "author": "Felix Baron <45421716+felixbaron@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "start": "electron ."
   },
   "devDependencies": {
-    "ava": "^1.1.0"
+    "ava": "^1.1.0",
+    "electron": "^4.0.1",
+    "spectron": "^5.0.0"
   }
 }
