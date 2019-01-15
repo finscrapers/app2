@@ -1,0 +1,9 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Finscrapers helps investors to make intelligent decisions based on facts",
+  "main": "main/index.js",
+  "repository": "https://github.com/finscrapers/app2",
+  "author": "Felix Baron <45421716+felixbaron@users.noreply.github.com>",
+  "license": "MIT"
+}
