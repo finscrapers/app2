@@ -5,5 +5,11 @@
   "main": "main/index.js",
   "repository": "https://github.com/finscrapers/app2",
   "author": "Felix Baron <45421716+felixbaron@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^1.1.0"
+  }
 }

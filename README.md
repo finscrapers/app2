@@ -1,4 +1,4 @@
-# Finscrapers
+# Finscrapers [![Build Status](https://travis-ci.org/finscrapers/app2.svg?branch=master)](https://travis-ci.org/finscrapers/app2)
 
 Finscrapers helps investors to make intelligent decisions based on facts
 
