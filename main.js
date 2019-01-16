@@ -1,17 +1,26 @@
 const { app, BrowserWindow } = require('electron')
+const prepareNext = require('electron-next')
+const path = require('path')
+const isDev = require('electron-is-dev')
 
 let win
 
 function createWindow() {
   win = new BrowserWindow({ width: 800, height: 600 })
-  win.loadFile('renderer/index.html')
+  const devPath = 'http://localhost:8000/'
+  const prodPath = path.resolve('renderer/out/index.html')
+  const entry = isDev ? devPath : 'file://' + prodPath;
+  win.loadURL(entry)
 
   win.on('closed', () => {
     win = null
   })
 }
 
-app.on('ready', createWindow)
+app.on('ready', async() => {
+  if (isDev) await prepareNext('./renderer')
+  createWindow()
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
