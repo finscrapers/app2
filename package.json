@@ -7,7 +7,11 @@
   "author": "Felix Baron <45421716+felixbaron@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "release": "electron-builder",
+    "build": "yarn sass && next build renderer && next export renderer",
+    "install:dependencies": "./script/install-redis.sh",
+    "next": "next renderer/ -p 8080 -H 0.0.0.0",
+    "release": "yarn build && electron-builder",
+    "sass": "node-sass ./renderer/styles/styles.scss > ./renderer/styles/styles.css",
     "start": "electron .",
     "test": "ava"
   },
@@ -25,6 +29,18 @@
     "ava": "^1.1.0",
     "electron": "^4.0.1",
     "electron-builder": "^20.38.5",
+    "node-sass": "^4.11.0",
     "spectron": "^5.0.0"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.2.1",
+    "electron-next": "^3.1.5",
+    "jquery": "^3.3.1",
+    "next": "^7.0.2",
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1",
+    "reactstrap": "^7.1.0"
   }
 }
