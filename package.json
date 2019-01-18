@@ -41,6 +41,8 @@
     "next": "^7.0.2",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2"
   }
 }

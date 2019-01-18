@@ -2,3 +2,4 @@ node_modules/
 renderer/.next/
 dist/
 renderer/out/
+.sass-cache
