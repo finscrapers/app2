@@ -1,4 +1,7 @@
 node_modules/
 renderer/.next/
+.c9/
+yarn-error.log
 dist/
 renderer/out/
+.sass-cache
