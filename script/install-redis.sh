@@ -6,4 +6,4 @@ cd redis-5.0.3
 make
 cd ..
 rm redis-5.0.3.tar.gz
-sudo rm -r redis-5.0.3
+rm -r redis-5.0.3
