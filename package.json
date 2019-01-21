@@ -29,6 +29,8 @@
     "ava": "^1.1.0",
     "electron": "^4.0.1",
     "electron-builder": "^20.38.5",
+    "eslint": "^5.12.1",
+    "eslint-plugin-react": "^7.12.4",
     "node-sass": "^4.11.0",
     "spectron": "^5.0.0"
   },
